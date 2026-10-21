@@ -326,4 +326,5 @@ footer .container { display: flex; justify-content: space-between; align-items: 
 .repo-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border); }
 .repo-links a { display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 600; padding: 7px 12px; border-radius: 10px; border: 1px solid var(--border); transition: border-color 0.2s, color 0.2s; }
 .repo-links a:hover { border-color: var(--accent); color: var(--accent); }
+.private-badge { display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 600; padding: 7px 12px; border-radius: 10px; border: 1px dashed var(--border); color: var(--muted); }
 .more-repos { margin-top: 28px; text-align: center; }
