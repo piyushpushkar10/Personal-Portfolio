@@ -92,7 +92,7 @@
 
     // project filters
     const filters = document.querySelectorAll('.filter');
-    const projects = document.querySelectorAll('.project');
+    const projects = document.querySelectorAll('.project[data-cat]');
     filters.forEach(btn => btn.addEventListener('click', () => {
         filters.forEach(b => b.classList.toggle('active', b === btn));
         const f = btn.dataset.filter;
