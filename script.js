@@ -26,8 +26,11 @@
     const isDark = () => root.dataset.theme
         ? root.dataset.theme === 'dark'
         : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const themeMetas = document.querySelectorAll('meta[name="theme-color"]');
     const syncThemeIcon = () => {
         themeToggle.querySelector('i').className = isDark() ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+        // a saved choice overrides the system-based browser bar colour
+        if (root.dataset.theme) themeMetas.forEach(m => { m.content = isDark() ? '#0b0d12' : '#f7f7fb'; });
     };
     themeToggle.addEventListener('click', () => {
         const next = isDark() ? 'light' : 'dark';
@@ -94,7 +97,10 @@
     const filters = document.querySelectorAll('.filter');
     const projects = document.querySelectorAll('.project[data-cat]');
     filters.forEach(btn => btn.addEventListener('click', () => {
-        filters.forEach(b => b.classList.toggle('active', b === btn));
+        filters.forEach(b => {
+            b.classList.toggle('active', b === btn);
+            b.setAttribute('aria-pressed', b === btn);
+        });
         const f = btn.dataset.filter;
         projects.forEach(p => {
             const show = f === 'all' || p.dataset.cat.split(' ').includes(f);

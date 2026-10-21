@@ -8,8 +8,10 @@
     <meta property="og:title" content="Piyush Pushkar — Software & Automation Engineer">
     <meta property="og:description" content="Full-stack apps, automation pipelines and AI enablement for telecom and enterprise operations.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="profile.jpg">
-    <meta name="theme-color" content="#0b0d12">
+    <meta property="og:url" content="https://piyushpushkar10.github.io/Personal-Portfolio/">
+    <meta property="og:image" content="https://piyushpushkar10.github.io/Personal-Portfolio/profile.jpg">
+    <meta name="theme-color" content="#f7f7fb" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%237c5cff'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='white'>PP</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,6 +33,7 @@
                 <ul class="menu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#training">Training</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -148,16 +151,52 @@
             </div>
         </section>
 
+        <!-- training -->
+        <section class="section" id="training">
+            <div class="container">
+                <p class="eyebrow">Training</p>
+                <h2 class="section-title">Teaching teams to work with AI</h2>
+                <p class="section-lead">Live, hands-on workshops I've run for <b>450+ employees</b> across the company, from first steps with Gemini to prompting for real business writing.</p>
+                <div class="gallery">
+                    <figure class="shot reveal">
+                        <a href="assets/training-genai-workshop.jpg" target="_blank" rel="noopener">
+                            <img src="assets/training-genai-workshop.jpg" alt="Presenting the Generative AI Workshop on Google Meet to 82 participants" width="1400" height="462" loading="lazy">
+                        </a>
+                        <figcaption><b>Generative AI Workshop</b><span>82 participants · live on Google Meet</span></figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <a href="assets/training-gemini-intro.jpg" target="_blank" rel="noopener">
+                            <img src="assets/training-gemini-intro.jpg" alt="Presenting the Getting Started with AI: Gemini session on Google Meet to 19 participants" width="1400" height="469" loading="lazy">
+                        </a>
+                        <figcaption><b>Getting Started with AI: Gemini</b><span>19 participants · introductory session</span></figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <a href="assets/training-gemini-demo.jpg" target="_blank" rel="noopener">
+                            <img src="assets/training-gemini-demo.jpg" alt="Walking participants through the Gemini app and its tools" width="1400" height="476" loading="lazy">
+                        </a>
+                        <figcaption><b>Gemini walkthrough</b><span>Hands-on tour of Deep Research, writing and image tools</span></figcaption>
+                    </figure>
+                    <figure class="shot reveal">
+                        <a href="assets/training-prompting-demo.jpg" target="_blank" rel="noopener">
+                            <img src="assets/training-prompting-demo.jpg" alt="Demonstrating a prompt that turns a technical answer into an executive-ready summary" width="1400" height="474" loading="lazy">
+                        </a>
+                        <figcaption><b>Prompting for business writing</b><span>Turning a technical answer into an executive-ready summary</span></figcaption>
+                    </figure>
+                </div>
+                <p class="work-note"><i class="fa-solid fa-user-shield"></i> Colleagues' names, faces and internal details are blurred for privacy.</p>
+            </div>
+        </section>
+
         <!-- projects -->
-        <section class="section" id="projects">
+        <section class="section alt" id="projects">
             <div class="container">
                 <p class="eyebrow">Projects</p>
                 <h2 class="section-title">Things I've built</h2>
-                <div class="filters" role="tablist">
-                    <button class="filter active" data-filter="all">All</button>
-                    <button class="filter" data-filter="web">Web apps</button>
-                    <button class="filter" data-filter="auto">Automation &amp; AI</button>
-                    <button class="filter" data-filter="sec">Security &amp; Infra</button>
+                <div class="filters" role="group" aria-label="Filter projects">
+                    <button class="filter active" data-filter="all" aria-pressed="true">All</button>
+                    <button class="filter" data-filter="web" aria-pressed="false">Web apps</button>
+                    <button class="filter" data-filter="auto" aria-pressed="false">Automation &amp; AI</button>
+                    <button class="filter" data-filter="sec" aria-pressed="false">Security &amp; Infra</button>
                 </div>
                 <div class="project-grid">
                     <article class="project reveal" data-cat="web">
@@ -279,7 +318,7 @@
         </section>
 
         <!-- skills -->
-        <section class="section alt" id="skills">
+        <section class="section" id="skills">
             <div class="container">
                 <p class="eyebrow">Skills</p>
                 <h2 class="section-title">My toolkit</h2>
@@ -328,7 +367,7 @@
         </section>
 
         <!-- contact -->
-        <section class="section" id="contact">
+        <section class="section alt" id="contact">
             <div class="container">
                 <div class="contact-card reveal">
                     <p class="eyebrow">Contact</p>

@@ -222,6 +222,20 @@ button { font: inherit; cursor: pointer; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
 .tags span { font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); }
 
+/* training */
+.section-lead { color: var(--muted); max-width: 640px; margin: -28px 0 32px; font-size: 1.04rem; }
+.section-lead b { color: var(--text); }
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.shot {
+    border-radius: var(--radius); overflow: hidden; background: var(--surface); border: 1px solid var(--border);
+    transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+}
+.shot:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: var(--shadow); }
+.shot img { display: block; width: 100%; height: auto; background: #000; }
+.shot figcaption { padding: 16px 20px; }
+.shot figcaption b { display: block; font-weight: 600; }
+.shot figcaption span { color: var(--muted); font-size: 0.9rem; }
+
 /* skills */
 .skill-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .skill-card, .edu-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
@@ -289,7 +303,7 @@ footer .container { display: flex; justify-content: space-between; align-items: 
     .menu.open { display: flex; }
     .menu a { display: block; padding: 12px 14px; }
     .section { padding: 72px 0; }
-    .skill-grid, .edu-grid { grid-template-columns: 1fr; }
+    .skill-grid, .edu-grid, .gallery { grid-template-columns: 1fr; }
     .chip { font-size: 0.75rem; padding: 7px 10px; }
     .chip-1 { left: -12%; } .chip-2 { right: -12%; } .chip-3 { left: -6%; }
     .tl-card { padding: 22px 20px; }
