@@ -1,2 +1,5 @@
 # raw, unblurred screenshots: never publish
 assets/Screenshot*
+# original, unedited photos
+IMG-*.jpg
+Professional Portrait*.png
