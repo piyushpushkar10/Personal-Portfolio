@@ -248,6 +248,9 @@ button { font: inherit; cursor: pointer; }
 .edu-row { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-top: 1px solid var(--border); }
 .edu-row:first-of-type { border-top: 0; padding-top: 0; }
 .edu-row b { display: block; font-weight: 600; font-size: 0.95rem; }
+.edu-row b a { transition: color 0.2s; }
+.edu-row b a:hover { color: var(--accent); }
+.edu-row b a i { font-size: 0.7em; margin-left: 4px; color: var(--muted); }
 .edu-row span { color: var(--muted); font-size: 0.88rem; }
 .edu-row em { font-style: normal; color: var(--muted); font-size: 0.85rem; white-space: nowrap; }
 
