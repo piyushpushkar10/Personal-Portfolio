@@ -61,7 +61,7 @@
     // count-up stats
     const countUp = el => {
         const target = +el.dataset.count;
-        const fmt = n => n.toLocaleString('en-IN');
+        const fmt = n => n.toLocaleString('en-IN') + (el.dataset.suffix || '');
         if (reduceMotion) { el.textContent = fmt(target); return; }
         const start = performance.now(), dur = 1400;
         const step = now => {
