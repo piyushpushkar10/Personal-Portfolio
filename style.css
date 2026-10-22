@@ -152,7 +152,7 @@ button { font: inherit; cursor: pointer; }
 .chip-3 { bottom: 6%; left: -10%; animation-delay: -4s; }
 @keyframes float { 50% { transform: translateY(-10px); } }
 
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 70px; }
+.stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 70px; }
 .stat {
     padding: 22px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border);
 }
@@ -292,6 +292,7 @@ footer .container { display: flex; justify-content: space-between; align-items: 
     .hero-photo { order: -1; width: min(220px, 58vw); }
     .chip-1 { left: -22%; } .chip-2 { right: -22%; } .chip-3 { left: -14%; }
     .stats { grid-template-columns: repeat(2, 1fr); margin-top: 48px; }
+    .stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
     .skill-grid { grid-template-columns: 1fr 1fr; }
 }
 
